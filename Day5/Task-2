@@ -1,0 +1,16 @@
+let student = {
+    name: "yogasanjay",
+    age: 20,
+    course: "Computer Technology",
+    displayInfo() {
+        console.log(Student: ${this.name}, Age: ${this.age}, Course: ${this.course});
+    }
+};
+student.displayInfo(); // Student: John, Age: 20, Course: Computer Science
+
+// Adding functions inside objects and invoking them
+student.updateCourse = function(newCourse) {
+    this.course = newCourse;
+    console.log(Course updated to: ${this.course});
+};
+student.updateCourse("AI & ML");
